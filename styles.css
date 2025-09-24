@@ -1,0 +1,95 @@
+/* ==== Estilos generales ==== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;           /* distancia desde el borde superior */
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #f1f1f1;
+    letter-spacing: 2px;
+}
+
+
+/* ==== Contenedor calculadora ==== */
+.calculadora {
+    background: #1e272e;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-gap: 15px;
+    justify-content: center;
+}
+
+/* ==== Display ==== */
+#display {
+    grid-column: span 4;
+    background: #000;
+    color: #00ff88;
+    font-size: 2rem;
+    text-align: right;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: inset 0 4px 10px rgba(0,0,0,0.8);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* ==== Botones ==== */
+button {
+    background: #2f3640;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+/* Hover y click */
+button:hover {
+    background: #00a8ff;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+/* ==== Estilos especiales ==== */
+#opIgual {
+    grid-column: span 2;
+    background: #44bd32;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#opIgual:hover {
+    background: #4cd137;
+}
+
+#borrar {
+    grid-column: span 2;
+    background: #e84118;
+    font-weight: bold;
+}
+
+#borrar:hover {
+    background: #ff4757;
+}
