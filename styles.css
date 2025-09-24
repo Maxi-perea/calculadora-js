@@ -11,17 +11,12 @@ body {
 }
 
 h1 {
-    position: absolute;
-    top: 20px;           /* distancia desde el borde superior */
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
-    font-weight: 600;
-    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
     color: #f1f1f1;
     letter-spacing: 2px;
 }
-
 
 /* ==== Contenedor calculadora ==== */
 .calculadora {
